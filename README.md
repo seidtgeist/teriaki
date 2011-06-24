@@ -15,10 +15,15 @@ This way it’ll end up in your PATH with the right owner.
 Syncing a folder
 ----------------
 
-Just invoke teriaki
+teriaki is invoked with a local path and a bucket name:
 
+	teriaki <sync_path> <bucket_name>'
+
+For example:
+
+	mkdir syncdir
 	teriaki syncdir/ bucket
-    echo '{"foo": "bar"}' > syncdir/poopin.json
+	echo '{"foo": "bar"}' > syncdir/poopin.json
 	echo 'foobar' > syncdir/poopin.txt
 	cp foo.jpg syncdir/
 
