@@ -1,0 +1,28 @@
+{
+  "author": "Stephan Seidt <evilhackerdude@gmail.com> (https://evilhackerdu.de)",
+  "name": "teriaki",
+  "description": "Watches & syncs a folder recursively into a riak bucket.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/evilhackerdude/teriaki",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/evilhackerdude/teriaki.git"
+  },
+  "main": "teriaki",
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": "0.4.8"
+  },
+  "bin": {
+    "teriaki": "./bin/teriaki.js"
+  },
+  "dependencies": {
+    "riak-js": "0.4.0",
+    "simple-mime": "0.0.3",
+    "watch": "0.3.2"
+  },
+  "bundleDependencies": ["riak-js", "simple-mime", "watch"],
+  "devDependencies": {}
+}
